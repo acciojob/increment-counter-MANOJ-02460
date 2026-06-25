@@ -2,12 +2,18 @@
 let count = 0;
 
 let counterElement = document.getElementById("counter");
+let incrementElement = document.getElementById("incrementBtn");
 
 
-function incrementBtn() {
+function updateDOM() {
+	counterElement.textContent = count;
 	alert(count)
-	counterElement.textContent = count++;	
 }
+
+incrementElement.addEventListener("click",()=>{
+	count++;
+	updateDOM()
+})
 
 
 
