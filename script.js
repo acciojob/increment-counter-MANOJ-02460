@@ -6,11 +6,13 @@ let incrementElement = document.getElementById("incrementBtn");
 
 
 function updateDOM() {
+	
 	counterElement.textContent = count;
-	alert(count)
+	
 }
 
 incrementElement.addEventListener("click",()=>{
+	alert(count)
 	count++;
 	updateDOM()
 })
